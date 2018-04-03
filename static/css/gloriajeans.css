@@ -1,0 +1,10 @@
+body{
+  background-image: url('../img/gloriajeans.jpg');
+  background-size: 100%;
+  background-attachment: cover;
+}
+
+img{
+  height: 400px;
+  width: 600px;
+}

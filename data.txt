@@ -1,0 +1,29 @@
+Kivhan Coffee
+#budget, wifi, environment, quality, noise
+[150, 'no', 'spacious', 1.5, 'just ok']
+[120, 'no', 'spacious', 3.0, 'just ok']
+[130, 'no', 'spacious', 4.0, 'just ok']
+[140, 'no', 'overcrowded', 3.5, 'just ok']
+[155, 'no', 'spacious', 4.5, 'quiet']
+[140, 'no', 'spacious', 4.5, 'just ok']
+[140, 'no', 'spacious', 3.5, 'just ok']
+[140, 'no', 'overcrowded', 2.0, 'noisy']
+[135, 'no', 'spacious', 3.0, 'noisy']
+[140, 'no', 'spacious', 2.0, 'quiet']
+
+Bo's Coffee
+[120, 'yes', 'enough people', 3.0, 'quiet']
+[95, 'yes', 'enough people', 3.0, 'quiet']
+[120, 'yes', 'overcrowded', 3.0, 'noisy']
+[120, 'yes', 'overcrowded', 4.5, 'quiet']
+[120, 'yes', 'enough people', 4.5, 'just ok']
+
+Seattle's Best - UST
+[140, 'no', 'enough people', 3.5, 'just ok']
+[140, 'no', 'overcrowded', 3.5, 'just ok']
+[150, 'yes', 'enough people', 3.5, 'just ok']
+
+Gloria Jean's - Sta. Mesa
+[140, 'no', 'enough people', 4.0, 'quiet']
+[125, 'no', 'spacious', 4.5, 'quiet']
+[100, 'no', 'spacious', 4.5, 'quiet']

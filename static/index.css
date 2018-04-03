@@ -1,0 +1,16 @@
+@font-face {
+    font-family: PattyLabelle;
+    src: url('fonts/PattyLabelle.otf');
+}
+
+body
+{
+  background-image: url('index.jpeg');
+  background-attachment: cover;
+  background-size: 100%;
+}
+
+h1, h3
+{
+  font-family: PattyLabelle;
+}

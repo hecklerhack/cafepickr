@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CafePickr</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/index.css">
+  </head>
+  <body>
+    <div class="white-overlay">
+      <div class="mt-3 text-center">
+        <h1 class="text-center">CafePickr</h1>
+        <h3 class="text-center">For undecided coffee lovers</h3>
+      </div>
+
+      <div class="card mt-3 mx-auto" style="width:40rem;">
+        <div class="card-header">
+          Pick your preferences and let the app decide for you.
+        </div>
+        <div class="card-body">
+          <form action="/pickr" method="post">
+            {% csrf_token %}
+            <div class="form-row align-items-center">
+              <div class="col">
+                <label for="budget">Budget</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">P</div>
+                  </div>
+                  <input type="number" class="form-control" id="budget" name="budget" placeholder="150">
+                </div>
+              </div>
+              <div class="col">
+                <label for="environment">Environment</label>
+                <select class="form-control" id="environment" name="environment">
+                  <option value="0">Spacious</option>
+                  <option value="1">Enough People</option>
+                  <option value="2">Overcrowded</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row align-items-center mt-3">
+              <div class="col">
+                <label for="quality">Coffee Quality</label>
+                <input class="form-control" type="text" maxlength="3" id="quality" name="quality" placeholder="4.5">
+              </div>
+              <div class="col">
+                <label for="noise">Noise</label>
+                <select class="form-control" id="noise" name="noise">
+                  <option value="0">Loud</option>
+                  <option value="1">Just OK</option>
+                  <option value="2">Quiet</option>
+                </select>
+              </div>
+            </div>
+            <div class="text-center mt-3">
+              <input type="checkbox" class="form-check-input" id="hasWifi" name="hasWifi" value="1">
+              <label for="hasWifi">Wifi?</label>
+            </div>
+            <input class="btn btn-warning mt-3 text-center btn-block" type="submit" value="Enter">
+          </form>
+        </div>
+        <div class="card-footer">
+          This app uses a trained decision tree that was fitted according to customer reviews and Trish's personal reviews as well.
+        </div>
+      </div>
+
+      <!-- KIVHAN COFFEE MODAL -->
+      <div class="modal fade show" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Try out</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h1 class="text-center">Kivhan Coffee</h1>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
